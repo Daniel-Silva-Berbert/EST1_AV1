@@ -7,7 +7,7 @@ public class App {
         int opcao = 0;
 
         do {
-            System.out.println("##---Fibonacci e Fatorial----##");
+            System.out.println("\n##---Fibonacci e Fatorial----##");
             System.out.println("|-----------------------------|");
             System.out.println("| 1 - Fibonacci               |");
             System.out.println("| 2 - Fatorial                |");
@@ -23,8 +23,10 @@ public class App {
                         try {
                             System.out.print("\nDigite um número inteiro positivo para o cálculo de Fibonacci: ");
                             int numero = menu.nextInt();
-                            long resultado = Calculo.fibonacci(numero);
-                            System.out.println("O resultado do Fibonacci de " + numero + " é " + resultado + "\n");
+                            for(int i = 0 ; i <= numero; ++i){
+                                long resultado = Calculo.fibonacci(i);
+                                System.out.print(resultado + "-");
+                            }
                         } catch (InputMismatchException im) {
                             System.out.println("\nPor favor, insira um número inteiro positivo válido para Fibonacci.");
                             menu.next();

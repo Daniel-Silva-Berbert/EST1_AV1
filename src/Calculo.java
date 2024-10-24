@@ -3,13 +3,18 @@ public class Calculo {
         if(numero < 0)
             throw new IllegalArgumentException("O número não pode ser negativo.");
         else{
-            long result = 1;
-            long resultAnte = 1;
-            for(int i = 1; i < numero; i++){
-                resultAnte = result - resultAnte;
-                result += resultAnte;
+            if(numero == 0)
+            {
+                return 0;
+            }else{
+                long result = 1;
+                long resultAnte = 1;
+                for(int i = 1; i < numero; i++){
+                    resultAnte = result - resultAnte;
+                    result += resultAnte;
+                }
+                return result;
             }
-            return result;
         }
     }
     
