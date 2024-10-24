@@ -4,7 +4,7 @@ public class SomarMulti {
         if(y == 1){
             return x;
         }else if(y < 0){
-            y * -1;
+            y = y * -1;
             return (x + somarMulti(x, y-1))*-1;
         }
         else{
