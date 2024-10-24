@@ -10,7 +10,7 @@ public class App {
         try {
             int numero = input.nextInt();
             boolean resultado = Primo.isPrimo(numero);
-            System.out.println("O número " + numero + " é " + (resultado? "primo": "não é primo"));
+            System.out.println("O número " + numero + (resultado? "é primo": "não é primo"));
         } catch (InputMismatchException im) {
             System.out.println("\nPor favor, insira um número inteiro positivo. Programa encerrado");
         }
