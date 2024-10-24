@@ -9,7 +9,7 @@ public class Calculadora {
                 return 1;
             else{ 
                 if(n == 1)
-                    return n;
+                    return 2;
                 else
                     return N2(n-1, 2);
             }
